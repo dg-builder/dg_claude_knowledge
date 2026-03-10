@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo:*)",
+      "Bash(~/dg_claude_knowledge/hooks/session-start.sh)",
+      "Bash(wc:*)",
+      "Bash(mkdir:*)"
+    ]
+  }
+}

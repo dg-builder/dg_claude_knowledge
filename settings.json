@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(~/dg_claude_knowledge/**)",
+      "Write(~/dg_claude_knowledge/**)",
+      "Edit(~/dg_claude_knowledge/**)",
+      "Bash(git -C ~/dg_claude_knowledge *)"
+    ]
+  },
+  "hooks": {
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dg_claude_knowledge/hooks/pre-compact.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dg_claude_knowledge/hooks/session-start.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dg_claude_knowledge/hooks/post-compact-context.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dg_claude_knowledge/hooks/memory-reminder.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
