@@ -36,7 +36,7 @@ if [ "${MEMORY_UPDATED:-0}" -gt 0 ]; then
 fi
 
 # Memory needs updating — block stop with reminder
-cat >&2 <<'MSG'
+cat <<'MSG'
 MEMORY UPDATE NEEDED: You completed substantive work this session but haven't updated the knowledge repository.
 
 Checklist before stopping:
