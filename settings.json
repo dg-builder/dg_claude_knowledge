@@ -5,7 +5,7 @@
       "Read(~/dg_claude_knowledge/**)",
       "Write(~/dg_claude_knowledge/**)",
       "Edit(~/dg_claude_knowledge/**)",
-      "Bash(git -C ~/dg_claude_knowledge *)".
+      "Bash(git -C ~/dg_claude_knowledge *)",
       "Read",
       "Edit",
       "Write",
