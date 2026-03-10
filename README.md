@@ -37,7 +37,7 @@ The result: Claude remembers your corrections, knows your codebase conventions, 
 
 1. Clone this repo to your home directory:
    ```bash
-   git clone <your-repo-url> ~/dg_claude_knowledge
+   git clone git@github.com:dg-builder/dg_claude_knowledge.git ~/dg_claude_knowledge
    ```
 
 2. Run the setup script to create symlinks:
