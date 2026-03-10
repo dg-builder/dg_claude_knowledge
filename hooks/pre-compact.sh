@@ -5,7 +5,7 @@
 
 KNOWLEDGE_DIR=~/dg_claude_knowledge/knowledge
 
-cat >&2 <<'MSG'
+cat <<'MSG'
 CONTEXT COMPACTION IMMINENT — Save state before it's lost:
 
 1. If you have unsaved debugging insights, root causes, or important context
